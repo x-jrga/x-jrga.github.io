@@ -1,0 +1,92 @@
+#side{
+position: absolute;
+top: 0;
+bottom: 0; 
+left: 0;
+width: 250px; /*Width of frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background: black;
+color: white;
+}
+
+/* unvisited link */
+#side a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+#side a:visited {
+    color:  white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+#side a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* selected link */
+#side a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+
+#main{
+position: fixed;
+top: 0; 
+left: 250px;
+right: 0;
+bottom: 0;
+overflow: auto; 
+background: #fff;
+display: block
+}
+
+
+#main a:link
+{
+    color: black;
+    /*text-decoration: none;*/
+}
+
+#main a:visited
+{
+    color: black;
+    /*text-decoration: none;*/
+}
+
+#main a:hover {
+    color: black;
+    font-weight: bold;
+    /*text-decoration: none;*/
+}
+
+/* selected link */
+#main a:active {
+    color: blue;
+    /*text-decoration: none;*/
+}
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%; 
+}
+
+.class1{
+margin: 20px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+font-family: "Arvo";
+font-size: 14px;
+}
+
+.class2{
+margin-left: 10px;
+}

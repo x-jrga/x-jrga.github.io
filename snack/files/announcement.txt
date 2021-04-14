@@ -1,0 +1,32 @@
+Dear Sir/Madam,
+
+This is an email to announce the latest version of the Snack.
+
+Snack is learning software for nutrition, a meal design tool and calculator that
+could facilitate achieving your health goals and objectives by first helping you 
+understand your food intake and second by allowing you to create new food
+combinations that meet specific requirements.
+
+Snack is a training program designed to find lowest calorie food combination. It
+lets you experiment and get faster, better, less expensive results so you can 
+rapidly learn. Its intended audience is anyone with interest in nutrition.
+
+Home page: https://x-jrga.github.io/snack
+Download: https://sourceforge.net/projects/snackmix
+
+Features:
+    - quantify food intake
+    - track any nutrient or compound that has an impact on health
+    - find food items that provide a specific nutrient
+    - keep a food journal and track progress
+    - compare two meals to see difference in nutritional value
+    - compare meal against Required Daily Allowance (RDA)
+    - compare meal against Upper Limit (UL) values to check for excesses
+    - Export data and create reports in spreadsheet
+    - facilitate learning/teaching anyone with interest in nutrition
+    - quantify any popular diet for comparison and research purposes
+    - calculate food quotient (FQ)
+    - is free and open source
+
+Requirements:
+   - Java 11

@@ -1,0 +1,6 @@
+Name	Group	Profile	Enabled	Action	Program	Local Address	Remote Address	Protocol	Local Port	Remote Port	Allowed Computers	
+chrome		All	Yes	Allow	C:\Program Files (x86)\Google\Chrome\Application\chrome.exe	Any	Any	TCP	Any	80, 443	Any	
+dhcp		All	Yes	Allow	%SystemRoot%\System32\svchost.exe	Any	Any	UDP	68	67	Any	
+dns		All	Yes	Allow	%SystemRoot%\System32\svchost.exe	Any	Any	UDP	Any	53	Any	
+firefox		All	Yes	Allow	%ProgramFiles%\Mozilla Firefox\firefox.exe	Any	Any	TCP	Any	80, 443	Any	
+icmp4		All	Yes	Allow	System	Any	Any	ICMPv4	Any	Any	Any	

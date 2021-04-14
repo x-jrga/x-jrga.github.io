@@ -1,0 +1,16 @@
+/*
+Author: Jorge R Garcia de Alba
+Title:  State Diagram For Getting Things Done (GTD)
+*/
+STUFF=(isActionable->ACTIONABLE|isNotActionable->NOTACTIONABLE),
+ACTIONABLE=(isNext->NEXT|isScheduled->SCHEDULED|isDelegated->DELEGATED),
+NOTACTIONABLE=(isTrash->TRASH|isSomeday->SOMEDAY|isReference->REFERENCE),
+NEXT=(isDone->DONE),
+SCHEDULED=(pickStuff->STUFF),
+DELEGATED=(pickStuff->STUFF),
+TRASH=(pickStuff->STUFF),
+SOMEDAY=(pickStuff->STUFF),
+REFERENCE=(pickStuff->STUFF),
+DONE=(pickNext->NEXT|pickStuff->STUFF).
+
+menu RUN = {pickNext}

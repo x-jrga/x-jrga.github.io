@@ -1,0 +1,39 @@
+/* courtesy Jorge Garcia de Alba */
+
+digraph example_1 {
+
+    labelloc = "t";
+    label = "Phytonutrients (Not All Categories Shown)
+              ";
+    fontsize = 20;
+    fontname = "Liberation Mono"
+
+    size = "100,100";
+    nodesep = 0.25;
+    ranksep = 1.5;
+
+    node [color = lightgray, style = filled, fontname = "Liberation Mono"];
+    "Anthoxanthins" -> "Flavan-3-ols" [label = ""];
+    "Anthoxanthins" -> "Flavanones" [label = ""];
+    "Anthoxanthins" -> "Flavones" [label = ""];
+    "Anthoxanthins" -> "Flavonols" [label = ""];
+    "Anthoxanthins" -> "Isoflavones" [label = ""];
+    "Carotenoids" -> "Alpha-carotene" [label = ""];
+    "Carotenoids" -> "Beta-carotene" [label = ""];
+    "Carotenoids" -> "Beta-crypoxanthin" [label = ""];
+    "Carotenoids" -> "Lutein" [label = ""];
+    "Carotenoids" -> "Lycopene" [label = ""];
+    "Carotenoids" -> "Zeaxanthin" [label = ""];
+    "Flavan-3-ols" -> "Catechins" [label = "is"];
+    "Flavan-3-ols" -> "Proanthocyanidins" [label = ""];
+    "Flavonoids" -> "Anthocyanins" [label = ""];
+    "Flavonoids" -> "Anthoxanthins" [label = ""];
+    "Fruits, Vegetables, Legumes, Herbs, Grains, Nuts, Oils" -> "Phytonutrients" [label = "provide"];
+    "Phytonutrients" -> "Carotenoids" [label = ""];
+    "Phytonutrients" -> "Flavonoids" [label = ""];
+    "Phytonutrients" -> "Phytosterols" [label = ""];
+    "Phytonutrients" -> "Sulphides and Glucosinolates" [label = ""];
+    "Phytosterols" -> "Campesterol" [label = ""];
+    "Phytosterols" -> "Sitosterol" [label = ""];
+    "Phytosterols" -> "Stigmasterol" [label = ""];
+}

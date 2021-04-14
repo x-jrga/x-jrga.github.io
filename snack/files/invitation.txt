@@ -1,0 +1,9 @@
+You're invited! I am looking a for a few users and developers to test 
+Snack before it is released to the public. The only requirement is that 
+java 8 or 11 is installed on your computer. This will be a test, meaning 
+that the software may have some bugs and break at times -- which is why I 
+need your testing and feedback to make it better. If you're interested in 
+helping, just download the software, use it and send your questions and 
+comments to:
+
+snack.nutrition.software@gmail.com or snackmix google group
