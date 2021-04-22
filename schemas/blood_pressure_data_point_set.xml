@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blood_pressure_data_point_set
     xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance'
-    xsd:noNamespaceSchemaLocation="https://x-jrga.github.io/schemas/blood_pressure_data_point_set.xsd">
+    xsd:noNamespaceSchemaLocation="https://xjrga.github.io/schemas/blood_pressure_data_point_set.xsd">
     <id>abc</id>
     <blood_pressure_data_point>
 	<sys>120</sys>

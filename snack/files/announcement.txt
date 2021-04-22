@@ -11,7 +11,7 @@ Snack is a training program designed to find lowest calorie food combination. It
 lets you experiment and get faster, better, less expensive results so you can 
 rapidly learn. Its intended audience is anyone with interest in nutrition.
 
-Home page: https://x-jrga.github.io/snack
+Home page: https://xjrga.github.io/snack
 Download: https://sourceforge.net/projects/snackmix
 
 Features:
