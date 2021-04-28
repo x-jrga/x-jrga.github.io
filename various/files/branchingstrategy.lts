@@ -1,0 +1,12 @@
+/*
+Author: Jorge R Garcia de Alba
+Title:  State Diagram For Git Development Process - Scheduled Development
+*/
+
+MASTER=(branch_to_develop->DEVELOP|branch_to_hotfix->HOTFIX),
+HOTFIX=(commit_to_hotfix->HOTFIX|merge_to_master->MASTER|merge_to_develop->DEVELOP),
+DEVELOP=(branch_to_ticket->TICKET|commit_to_develop->DEVELOP|branch_to_release->RELEASE),
+TICKET=(commit_to_ticket->TICKET|merge_to_develop->DEVELOP),
+RELEASE=(commit_to_release->RELEASE|merge_to_master->MASTER|merge_to_develop->DEVELOP).
+
+menu RUN = {branch_to_develop}
