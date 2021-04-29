@@ -1,12 +1,12 @@
 /*
 Author: Jorge R Garcia de Alba
-Title:  State Diagram For Git Development Process - Scheduled Development
+Title:  State Diagram For Git Development Process I Use
 */
 
-MASTER=(branch_to_develop->DEVELOP|branch_to_hotfix->HOTFIX),
-HOTFIX=(commit_to_hotfix->HOTFIX|merge_to_master->MASTER|merge_to_develop->DEVELOP),
-DEVELOP=(branch_to_ticket->TICKET|commit_to_develop->DEVELOP|branch_to_release->RELEASE),
-TICKET=(commit_to_ticket->TICKET|merge_to_develop->DEVELOP),
-RELEASE=(commit_to_release->RELEASE|merge_to_master->MASTER|merge_to_develop->DEVELOP).
+MASTER=(add_branch_DEVELOP->DEVELOP|add_branch_HOTFIX->HOTFIX),
+HOTFIX=(commit_HOTFIX_fix->HOTFIX|merge_into_MASTER->MASTER|merge_into_DEVELOP->DEVELOP),
+DEVELOP=(add_branch_TICKET->TICKET|commit_DEVELOP_fix->DEVELOP|add_branch_RELEASE->RELEASE),
+TICKET=(commit_TICKET_fix->TICKET|merge_into_DEVELOP->DEVELOP),
+RELEASE=(commit_RELEASE_fix->RELEASE|merge_into_MASTER->MASTER|merge_into_DEVELOP->DEVELOP).
 
 menu RUN = {branch_to_develop}
