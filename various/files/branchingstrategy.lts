@@ -3,10 +3,12 @@ Author: Jorge R Garcia de Alba
 Title:  State Diagram For Git Development Process I Use
 */
 
-MASTER=(add_branch_DEVELOP->DEVELOP|add_branch_HOTFIX->HOTFIX),
-HOTFIX=(commit_HOTFIX_fix->HOTFIX|merge_into_MASTER->MASTER|merge_into_DEVELOP->DEVELOP),
-DEVELOP=(add_branch_FEATURE->FEATURE|commit_DEVELOP_fix->DEVELOP|add_branch_RELEASE->RELEASE),
-FEATURE=(commit_FEATURE_fix->FEATURE|merge_into_DEVELOP->DEVELOP),
-RELEASE=(commit_RELEASE_fix->RELEASE|merge_into_MASTER->MASTER|merge_into_DEVELOP->DEVELOP).
+MASTER=(add_branch_DEVELOP->DEVELOP),
+DEVELOP=(add_branch_DEVELOP_TICKET->DEVELOP_TICKET|add_branch_FROZEN->FROZEN),
+DEVELOP_TICKET=(commit_DEVELOP_TICKET_fix->DEVELOP_TICKET|merge_into_DEVELOP->DEVELOP),
+FROZEN=(add_branch_FROZEN_TICKET->FROZEN_TICKET|merge_into_RELEASE->RELEASE),
+FROZEN_TICKET=(commit_FROZEN_TICKET_fix->FROZEN_TICKET|merge_into_FROZEN->FROZEN),
+RELEASE=(add_branch_RELEASE_TICKET->RELEASE_TICKET|merge_into_MASTER->MASTER),
+RELEASE_TICKET=(commit_RELEASE_TICKET_fix->RELEASE_TICKET|merge_into_RELEASE->RELEASE).
 
-menu RUN = {branch_to_develop}
+menu RUN = {add_branch_DEVELOP}
